@@ -1,0 +1,130 @@
+.home {
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 5rem 1rem;
+  transition: all 0.5s ease;
+}
+
+.h-right {
+  position: relative;
+}
+.h-right > img {
+  width: 308px;
+  height: 308 px;
+}
+.h-vector {
+  position: absolute;
+  width: 451px !important;
+  height: 374px !important;
+  top: -22px;
+  right: -92px;
+  z-index: -1;
+}
+.home-btn {
+  background: var(--dColor);
+  width: 150px;
+  height: 36px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: black;
+}
+
+.text-bg-top,
+.text-bg-bot {
+  position: absolute;
+  color: transparent;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 25%;
+}
+.text-bg-top {
+  top: 42px;
+  right: 0;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #bc4444, #4646b5, #66ecf3);
+  background-size: 200% 100%;
+  background-clip: text;
+  animation: topText 3s linear infinite;
+}
+@keyframes topText {
+  0% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 200% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+.text-bg-bot {
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #bc4444, #4646b5, #66ecf3);
+  background-size: 200% 100%;
+  background-clip: text;
+  animation: topText 3s linear infinite;
+  animation-delay: 3s;
+}
+.h-social {
+  right: 1rem;
+  bottom: 1rem;
+}
+.h-title {
+  color: white;
+}
+.text-type {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .home {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .h-title {
+    font-size: 42px;
+  }
+  .h-vector {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .text-bg-top,
+  .text-bg-bot,
+  .h-vector {
+    display: none;
+  }
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+    min-height: unset;
+    /* border: 1px solid white; */
+    padding: 1rem;
+    margin-bottom: 116px;
+  }
+  .h-right > img {
+    width: 215px;
+  }
+  .h-social {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(-66px - 3rem);
+  }
+  .h-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-btn {
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    bottom: -52px;
+  }
+}

@@ -1,0 +1,234 @@
+.a-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+}
+.section-hero {
+  width: 100%;
+  background: #ffffff;
+  height: 1092px;
+  padding-top: 18px;
+}
+.title-section {
+  color: #222831;
+  text-align: center;
+  padding-bottom: 51px;
+  padding-inline: 1rem;
+}
+.img-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.xcode {
+  max-width: 821px;
+}
+.vsc {
+  max-width: 480px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: -140px;
+  width: 100%;
+  max-width: 1132px;
+  padding-bottom: 5rem;
+  padding-inline: 1rem;
+}
+.card {
+  min-width: 250px;
+  min-height: 270px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.js {
+  background: #eeeeee;
+}
+.react {
+  background: #000000;
+}
+.html {
+  background: #eeeeee;
+}
+.css {
+  background: #000000;
+}
+.swift {
+  background: #ffffff;
+}
+.swiftui {
+  background: #eeeeee;
+}
+.firebase {
+  background: #ffffff;
+}
+.github {
+  background: #ffffff;
+}
+.ps {
+  background: #f7f7f7;
+}
+.ai {
+  background: #e48646;
+}
+.xd {
+  background: #ffffff;
+}
+.figma {
+  background: #181819;
+}
+
+.card > img {
+  pointer-events: none;
+  object-fit: cover;
+}
+.js > img {
+  width: 155px;
+}
+.react > img {
+  width: 240px;
+}
+.html > img {
+  width: 200px;
+}
+.css > img {
+  width: 202px;
+}
+.swift > img {
+  width: 235px;
+}
+.swiftui > img {
+  width: 235px;
+}
+.firebase > img {
+  width: 235px;
+}
+.github > img {
+  width: 225px;
+}
+.ps > img {
+  width: 235px;
+}
+.ai > img {
+  width: 235px;
+}
+.xd > img {
+  width: 235px;
+}
+.figma > img {
+  width: 170px;
+}
+
+.mobile-slide {
+  display: none;
+  width: 100%;
+  gap: 1rem;
+  position: relative;
+  overflow-x: scroll;
+}
+
+.slide-btn {
+  bottom: 0.8rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  gap: 2rem;
+  color: white;
+  border-radius: 64px;
+  margin: 1rem 0;
+}
+.slide-btn > span {
+  cursor: pointer;
+  line-height: 0;
+}
+.mobile {
+  min-width: 170px;
+  min-height: 185px;
+}
+
+@media screen and (max-width: 800px) {
+  .section-hero {
+    height: 770px;
+  }
+  .xcode {
+    width: 414px;
+  }
+  .vsc {
+    width: 414px;
+  }
+  .title-section {
+    font-size: 40px;
+  }
+  .js {
+    width: 100%;
+  }
+  .web {
+    display: none;
+  }
+  .mobile-slide {
+    display: flex;
+  }
+  .slide-btn {
+    display: flex;
+    width: 100%;
+  }
+  .react > img {
+    width: 140px;
+  }
+  .firebase > img {
+    width: 160px;
+  }
+  .html > img {
+    width: 120px;
+  }
+  .css > img {
+    width: 135px;
+  }
+  .swift > img {
+    width: 160px;
+  }
+  .swiftui > img {
+    width: 157px;
+  }
+  .github > img {
+    width: 153px;
+  }
+  .ps {
+    width: 100%;
+    min-height: 120px;
+    margin-top: 1rem;
+    position: relative;
+  }
+  .ps::before {
+    content: "I design using:";
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    color: white;
+    font-size: 20px;
+  }
+  .ai {
+    width: 100%;
+    min-height: 120px;
+  }
+  .xd,
+  .figma {
+    min-width: calc(50% - 1rem);
+    min-height: 185px;
+  }
+  .xd > img {
+    width: 160px;
+  }
+  .figma > img {
+    width: 115px;
+  }
+}

@@ -1,0 +1,47 @@
+.loading-bar,
+.email-succes,
+.email-failed {
+  position: fixed;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.429);
+}
+.mail-icon {
+  font-size: 80px;
+  color: #36b5bb;
+  background: white;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.fail-icon {
+  font-size: 80px;
+}
+.fail-icon path {
+  stroke: #a34646;
+}
+
+.small-text {
+  padding: 1rem;
+  text-align: center;
+  font-size: 14px;
+}
+.close-mail {
+  width: 150px;
+  height: 36px;
+  border-radius: 8px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}

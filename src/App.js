@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/home/Home";
+import Work from "./pages/work/Work";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
+import { AnimatePresence } from "framer-motion";
+import LoadingPage from "./components/LoadingPage/LoadingPage";
+// import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 7000);
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {loading ? (
+        <LoadingPage />
+      ) : (
+        <>
+          <Navbar />
+          <AnimatePresence mode="wait" presenceAffectsLayout>
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />} />
+              <Route path="/mywork" element={<Work />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </AnimatePresence>
+        </>
+      )}
     </div>
   );
 }

@@ -1,0 +1,6 @@
+.default-btn {
+  width: 150px;
+  height: 36px;
+  background: var(--dColor);
+  border-radius: 8px;
+}
