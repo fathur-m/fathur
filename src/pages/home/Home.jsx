@@ -28,9 +28,6 @@ const Home = () => {
               1000, // Waits 2s
               "Hello I'm Fathur 👋", // Types 'Three' without deleting 'Two'
               3000,
-              () => {
-                console.log("Done typing!"); // Place optional callbacks anywhere in the array
-              },
             ]}
             wrapper="div"
             cursor={true}
