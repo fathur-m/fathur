@@ -32,9 +32,7 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  background: #272323e7;
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  background: #51bfb2;
   z-index: 98;
 }
 .n-list-mobile > li > a {

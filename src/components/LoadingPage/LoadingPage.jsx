@@ -6,8 +6,8 @@ const LoadingPage = () => {
   return (
     <motion.div
       className="loading-page"
-      animate={{ scale: 0 }}
-      transition={{ duration: 0.5, delay: 6.7 }}
+      animate={{ opacity: 0 }}
+      transition={{ type: "tween", duration: 0.5, delay: 6.7 }}
     >
       <div className="text-hello">
         <motion.h1
