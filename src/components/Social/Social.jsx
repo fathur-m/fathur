@@ -13,7 +13,7 @@ const Social = ({ className = "" }) => {
   return (
     <div className={`social ${className}`}>
       <img
-        onClick={openLink("https://www.instagram.com/_maxyyyy/?hl=id")}
+        onClick={openLink("https://www.instagram.com/ftrmd3/")}
         src={Ig}
         alt="/"
       />
@@ -24,7 +24,7 @@ const Social = ({ className = "" }) => {
       />
       <img
         onClick={openLink(
-          "https://www.linkedin.com/in/fathurrahman-muhammad-5173021ba/"
+          "https://www.linkedin.com"
         )}
         src={Linkedin}
         alt="/"
