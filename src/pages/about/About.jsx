@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import pageVariants from "../../components/Animate";
 import "./About.css";
-import ImgAbout from "../../assets/img/offpic.png";
+import ImgAbout from "../../assets/img/roundpic.png";
 import Button from "../../components/Button/Button";
 import { BsArrowRight } from "react-icons/bs";
 import AboutSection from "./AboutSection";
